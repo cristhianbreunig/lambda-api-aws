@@ -1,0 +1,10 @@
+image: node:lts
+stages:
+  - test
+test:
+  stage: test
+  before_script:
+    - npm install -g lerna
+    - npm run bootstrap:test
+  script:
+    - npm test
