@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap:test": "lerna bootstrap",
+    "bootstrap:prod": "lerna bootstrap -- --production --no-optional",
     "test": "lerna run test"
   }
 }
